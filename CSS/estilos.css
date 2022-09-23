@@ -1,0 +1,133 @@
+General
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+}
+p, li{
+    font-size: 25px;
+}
+
+/*Analisis*/
+.section{
+    margin-bottom: 30px;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #E7F2D5;
+    text-align: justify;
+}
+/*Navegacion*/
+.nav{
+    background-color: #9b0249;
+    height: 90px;
+    color: #8b5295;
+    position: fixed;  
+    width: 99%; 
+    margin-top: -10px;
+}
+.nav-container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-uaeh{
+    width: 13%;
+}
+.nav-menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    list-style: none;
+}
+.nav-a{
+    font-size: 23px;
+    color: #e7f2d5;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+
+}
+.nav-a::after{
+    content: "";
+    display: block;
+    background-color: #c7d989;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: .3s;
+}
+.nav-a:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.section-borde{
+    padding-top: 90px;
+    border-style: solid;
+    border-color: #000000;
+    margin: 10px;
+}
+.UAEH{
+    margin: 30px;
+    float: left;
+    width: 20%;
+}
+.ESTi{
+    margin: 30px;
+    float: right;
+    width: 20%;
+}
+.section-portada{
+    margin: 50px;
+    text-align: center;
+}
+.integrantes{
+    list-style: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+/*Analisis*/
+.section-valores{
+    padding-top: 90px;
+}
+.img-valores{
+    margin-left: 30%;
+    margin-top: 15px;
+    width: 40%;
+}
+.img-procesos{
+    margin-left: 20%;
+    margin-top: 15px;
+    width: 65%;
+}
+.img-valor1, .img-valor2{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    
+}
+.div{
+    display: flex;
+    text-align: center;
+}
+.div-valorinferior{
+    width: 47%;
+}
+.div-valorsuperior{
+    width: 47%;
+    margin-left: auto;
+}
+.container{
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid gray;
+    }
